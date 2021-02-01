@@ -1,0 +1,22 @@
+# Python virtual environment
+/env/
+/venv/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+
+#data
+*.csv
+*.las
+*.json
+*.tif
+*.png
+*.pdf
+*.jpg
+*.mp4
+*.mv4
+*.avi
+*.msk
+*.dxf
