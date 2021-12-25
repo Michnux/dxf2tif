@@ -1,0 +1,38 @@
+---
+spec-version: v1.0
+name: alteiademo/dxf2tif
+display-name: DXF to raster (.tif) (convertion)
+version: 1.0.0
+description: Generate a raster format (.tif) from a DXF (.dxf)
+docker-image: registry-1.docker.io/michaeldelagarde/dxf2tif:latest
+instance-type: small
+volume-size: 20
+groups: [UTILS]
+
+inputs:
+  - name: input_dxf
+    display-name: Choose DXF
+    description: DXF file (.dxf)
+    kind: dataset
+    schema:
+      type: vector
+    required: True
+
+parameters:
+  - name: grid_size
+    display-name: 'Grid Size (m) - Default: 0.2m'
+    description: The resolution of the output raster in m
+    schema:
+      type: string
+    required: False
+
+
+# deliverables:
+#   - name: output_tif
+#     display-name: rasterised_dxf
+#     description: Generated raster (.tif)
+#     kind: dataset
+#     schema:
+#       type: raster
+#     required: False
+

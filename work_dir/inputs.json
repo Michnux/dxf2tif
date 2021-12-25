@@ -1,0 +1,17 @@
+{
+	"parameters":{
+		"grid_size": 4.0
+	},
+	"inputs":{
+		"input_dxf":{
+			"_id": "xxxxxxxx",
+			"name": "dataset_name",
+			"components":[
+				{
+					"filename":"fossetotale_10082038.dxf",
+					"path": "/home/work_dir/fossetotale_10082038.dxf"
+				}
+			]
+		}
+	}
+}

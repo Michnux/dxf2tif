@@ -1,0 +1,1 @@
+{"outputs": {"plant_height": {"type": "raster", "format": "tif", "name": "plant_height", "components": [{"name": "output", "path": "/home/work_dir/output.tif"}]}}, "version": "v1.0"}
