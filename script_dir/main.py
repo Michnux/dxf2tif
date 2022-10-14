@@ -73,20 +73,17 @@ def main():
 				"name": "outputtif",
 				"components": [
 					{
-						"name": "output",
+						"name": "raster",
 						# "filename": "output.tif",
 						"path": str(outpath)
 					}
 				]
 			}
 		},
-		"version": "v1.0"
+		"version": "0.1"
 	}
 	with open(WORKING_DIR / 'outputs.json', 'w+') as f:
 		json.dump(output, f)
-
-	script_dir = str(SCRIPT_DIR)
-	upload_dataset(str(outpath), project_id, mission_id, script_dir)
 
 	logging.debug('End.')
 
